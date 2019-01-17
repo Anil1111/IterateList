@@ -9,7 +9,7 @@ class program
     static void Main(string[] args)
     {
         //Create an empty List of type object
-        List<object> myList = new List<object>();
+        List<object> myList = new List<object>();// We Use here only object not var
 
         //Add 101, -90, "Hello", "World", "Git Community"
         myList.Add(101);
