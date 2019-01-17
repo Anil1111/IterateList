@@ -9,7 +9,7 @@ class program
     static void Main(string[] args)
     {
         //Create an empty List of type object
-        List<object> myList = new List<object>();// We Use here only object not var
+        List<object> myList = new List<object>(); //We can use only object not var
 
         //Add 101, -90, "Hello", "World", "Git Community"
         myList.Add(101);
@@ -18,17 +18,20 @@ class program
         myList.Add("World");
         myList.Add("Git Community");
         myList.Add("false");
-        //Loop through the list, display all values and add all those that are type interface int
-        int sum = 0;
-        foreach (var obj in myList)
+
+        //Loop through the list
+        
+        foreach (var str in myList)
         {
-            Console.WriteLine(obj);
-            if (obj is int)
+
+
+      
+            if ( str is string)
             {
-                sum += (int)obj;
+                Console.WriteLine("The String  in the list are {0}", str);
             }
         }
-        Console.WriteLine("The sum of all the integers in the list is {0}", sum);
+       
         Console.ReadLine();
     }
 
